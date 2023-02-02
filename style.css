@@ -998,6 +998,11 @@ input {
     flex-direction: column-reverse;
   }
 
+  .header-logo-img {
+    width: 270px;
+    height: auto;
+  }
+
   .burger-menu {
     align-self: end;
     margin-bottom: 180px;
@@ -1007,8 +1012,12 @@ input {
     padding-top: 45px;
   }
 
-  .trends {
+  .header-title {
+    font-size: 26px;
+    line-height: 36px;
+  }
 
+  .trends {
   }
 
   .trend-card {
@@ -1055,5 +1064,9 @@ input {
 
   .trend-card:nth-child(2n) {
     margin-right: 0;
+  }
+
+  .product-card-preview .img-cover {
+    height: 285px;
   }
 }
