@@ -24,7 +24,7 @@ input {
 
 @font-face {
   font-family: "OpenSans Regular";
-  src: url(/sources/fonts/OpenSans-Regular.woff) format(woff);
+  src: url(./sources/fonts/OpenSans-Regular.woff) format(woff);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@ input {
 
 @font-face {
   font-family: "OpenSans Bold";
-  src: url(/sources/fonts/OpenSans-Bold.woff) format(woff);
+  src: url(./sources/fonts/OpenSans-Bold.woff) format(woff);
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -171,7 +171,7 @@ input {
 
 .header {
   position: relative;
-  background-image: url("/sources/img/banner-bg.jpg");
+  background-image: url("./sources/img/banner-bg.jpg");
   background-position: center top;
   background-size: cover;
   margin-bottom: 63px;
@@ -638,7 +638,7 @@ input {
 }
 
 .search-form-submit {
-  background-image: url(/sources/svg/search.svg);
+  background-image: url(./sources/svg/search.svg);
   background-repeat: no-repeat;
   background-position: center center;
   width: 47px;
@@ -806,15 +806,15 @@ input {
 }
 
 .link-dribble {
-  background-image: url("/sources/svg/001-dribbble.svg");
+  background-image: url("./sources/svg/001-dribbble.svg");
 }
 
 .link-pinterest {
-  background-image: url("/sources/svg/002-pinterest.svg");
+  background-image: url("./sources/svg/002-pinterest.svg");
 }
 
 .link-tumblr {
-  background-image: url("/sources/svg/003-tumblr.svg");
+  background-image: url("./sources/svg/003-tumblr.svg");
 }
 
 .copyright {
@@ -868,7 +868,7 @@ input {
 
 .popup-close {
   content: "";
-  background-image: url(/sources/svg/form-x.svg);
+  background-image: url(./sources/svg/form-x.svg);
   background-repeat: no-repeat;
   width: 1em;
   height: 1em;
