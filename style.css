@@ -912,7 +912,7 @@ input {
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("/sources/svg/form-arrows.svg");
+  background-image: url("./sources/svg/form-arrows.svg");
   background-size: 10px 17px;
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -946,11 +946,11 @@ input {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  background-image: url("/sources/svg/form-empty-circle.svg");
+  background-image: url("./sources/svg/form-empty-circle.svg");
 }
 
 .form-radio:checked + label:before {
-  background-image: url("/sources/svg/form-circle.svg");
+  background-image: url("./sources/svg/form-circle.svg");
 }
 
 /* Tablet */
