@@ -488,13 +488,11 @@
       </header>
       <section class="products">
         <article class="product-card">
-          <div class="product-card-preview">
-            <img
-              class="img-cover"
-              src="./sources/img/shop-item-desk1.jpg"
-              alt=""
-            />
-          </div>
+          <picture class="product-card-preview">
+            <source srcset="/sources/img/shop-item-mobile1.jpg" media="(max-width: 640px)">
+            <source srcset="/sources/img/shop-item-tablet1.jpg" media="(max-width: 1199px)">
+            <img class="img-cover" src="./sources/img/shop-item-desk1.jpg" alt=""/>
+          </picture>
           <div class="product-card-body">
             <div class="product-card-props">
               <h3 class="product-card-title">Подушки на диван</h3>
@@ -508,18 +506,16 @@
                 <p class="product-card-sale">1000 ₽</p>
                 <p class="product-card-price">800 ₽</p>
               </div>
-              <button class="product-card-btn form-submit">В магазин</button>
+              <a class="product-card-btn form-submit" href="#">В магазин</a>
             </div>
           </div>
         </article>
         <article class="product-card">
-          <div class="product-card-preview">
-            <img
-              class="img-cover"
-              src="./sources/img/shop-item-desk2.jpg"
-              alt=""
-            />
-          </div>
+          <picture class="product-card-preview">
+            <source srcset="/sources/img/shop-item-mobile2.jpg" media="(max-width: 640px)">
+            <source srcset="/sources/img/shop-item-tablet2.jpg" media="(max-width: 1199px)">
+            <img class="img-cover" src="./sources/img/shop-item-desk2.jpg" alt=""/>
+          </picture>
           <div class="product-card-body">
             <div class="product-card-props">
               <h3 class="product-card-title">Кукла «Зайчик»</h3>
@@ -535,18 +531,16 @@
                 <p class="product-card-sale">1000 ₽</p>
                 <p class="product-card-price">800 ₽</p>
               </div>
-              <button class="product-card-btn form-submit">В магазин</button>
+              <a class="product-card-btn form-submit" href="#">В магазин</a>
             </div>
           </div>
         </article>
         <article class="product-card">
-          <div class="product-card-preview">
-            <img
-              class="img-cover"
-              src="./sources/img/shop-item-desk3.jpg"
-              alt=""
-            />
-          </div>
+          <picture class="product-card-preview">
+            <source srcset="/sources/img/shop-item-mobile3.jpg" media="(max-width: 640px)">
+            <source srcset="/sources/img/shop-item-tablet3.jpg" media="(max-width: 1199px)">
+            <img class="img-cover" src="./sources/img/shop-item-desk3.jpg" alt=""/>
+          </picture>
           <div class="product-card-body">
             <div class="product-card-props">
               <h3 class="product-card-title">Шестиугольная рамка</h3>
@@ -562,7 +556,7 @@
                 <p class="product-card-sale">1000 ₽</p>
                 <p class="product-card-price">800 ₽</p>
               </div>
-              <button class="product-card-btn form-submit">В магазин</button>
+              <a class="product-card-btn form-submit" href="#">В магазин</a>
             </div>
           </div>
         </article>
@@ -603,15 +597,30 @@
         <h2 class="section-title">Ваш фидбек</h2>
       </header>
       <a class="popup-close" href="#">Закрыть окно</a>
+      <div class="popup-feedback-form">
       <form action="" class="feedback-form">
-        <label for="site-visits" class="feedback-label">Как часто вы заходите на сайт?</label>
-        <select name="site-visits" id="" class="visited-site">
+        <p>Как часто вы заходите на сайт?</p>
+        <select name="site-visits" id="" class="visited-site form-input">
           <option value="everyday">Почти каждый день</option>
           <option value="razvdni">Раз в несколько дней</option>
           <option value="razvnedel">Раз в несколько недель</option>
           <option value="razvgod">Несколько раз в год</option>
         </select>
       </form>
+      <form class="feedback-form">
+      <p>Вы подписаны на e-mail рассылку?</p>
+        <input class="form-radio"  type="radio" id="email-yes" name="email-sub" value="email-sub-yes">
+        <label for="email-yes">Да</label>
+        <input class="form-radio" type="radio" id="email-no" name="email-sub" value="email-sub-no">
+        <label for="email-no">Нет</label>
+      </form>
+      <form action="" class="feedback-form">
+        <p>Расскажите, какой контент вы хотели бы видеть
+          на нашем сайте?</p>
+        <textarea class="feedback-msg form-input" rows="10" id="" placeholder="Может, больше рецептов?"></textarea>
+      </form>
+      <input type="submit" class="form-submit subscribtion-form-submit" value="Отправить">
+      </div>
     </div>
   </div>
 </body>
