@@ -597,8 +597,8 @@
         <h2 class="section-title">Ваш фидбек</h2>
       </header>
       <a class="popup-close" href="#">Закрыть окно</a>
-      <div class="popup-feedback-form">
-      <form action="" class="feedback-form">
+      <form class="popup-feedback-form">
+      <div class="feedback-form">
         <p>Как часто вы заходите на сайт?</p>
         <select name="site-visits" id="" class="visited-site form-input">
           <option value="everyday">Почти каждый день</option>
@@ -606,21 +606,21 @@
           <option value="razvnedel">Раз в несколько недель</option>
           <option value="razvgod">Несколько раз в год</option>
         </select>
-      </form>
-      <form class="feedback-form">
+      </div>
+      <div class="feedback-form">
       <p>Вы подписаны на e-mail рассылку?</p>
         <input class="form-radio"  type="radio" id="email-yes" name="email-sub" value="email-sub-yes">
         <label for="email-yes">Да</label>
         <input class="form-radio" type="radio" id="email-no" name="email-sub" value="email-sub-no">
         <label for="email-no">Нет</label>
-      </form>
-      <form action="" class="feedback-form">
+      </div>
+      <div class="feedback-form">
         <p>Расскажите, какой контент вы хотели бы видеть
           на нашем сайте?</p>
         <textarea class="feedback-msg form-input" rows="10" id="" placeholder="Может, больше рецептов?"></textarea>
-      </form>
-      <input type="submit" class="form-submit subscribtion-form-submit" value="Отправить">
       </div>
+      <input type="submit" class="form-submit subscribtion-form-submit" value="Отправить">
+      </form>
     </div>
   </div>
 </body>
